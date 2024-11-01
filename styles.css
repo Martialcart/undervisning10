@@ -1,18 +1,39 @@
 *{
-    border-radius: 2em 4em 4em 2em;    
+    font-family: "Special Elite", system-ui; 
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    background-image: url("img/kvitebjorn/kvitebjorn_1");
+    background-image: url("img/kvitebjorn/kb14.jpg");
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 section {
+    object-fit: contain;
     display: flex;
-    width: 100%;
+    gap: 1em;
 }
 
-.oneTile {
-    flex-direction: column;
+iframe, img, h1, h2, h3, p {
+    border-radius: 1em;    
+}
+
+h1, h2, h3, p {
+    background-color: rgba(0,32,16,0.5);
+    padding: 0.5em;
 }
 
 iframe {
@@ -20,16 +41,29 @@ iframe {
     width: 50vw;
     }
 
+.oneTile {
+    img {
+	max-width: 90vw;
+    }
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .twoTile {
     div, img{
-	width: 50%;
+	max-width: 50vw;
     }
+    justify-content: space-around;
 }
 
 .threeTile {
-    img {
-	width: 100%;
+    img, div {
+	max-width: 30vw;
+	object-fit: cover;
     }
+    object-fit: cover;
+    justify-content: space-between;
 }
 
 @media(max-width: 426px) {
@@ -41,7 +75,7 @@ iframe {
     .twoTile {
 	flex-direction: column;
 	div, img{
-	    width: 100%;
+	    max-width: 100vw;
 	}
     }
 
@@ -50,6 +84,9 @@ iframe {
     }
 
     .threeTile {
+	img {
+    	    max-width: 90vw;
+       	}
 	flex-direction: column;
     }
 }
