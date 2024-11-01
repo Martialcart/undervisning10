@@ -1,0 +1,27 @@
+.txtImg {
+    display: flex;
+    flex-flow: row;
+}
+
+.imgTxt {
+    display: flex;
+    flex-flow: row;
+}
+
+.half {
+    width: 50%; 
+}
+
+@media(max-width: 560px) {
+    .imgTxt {
+	flex-flow: column-reverse;
+    }
+
+    .txtImg {
+	flex-flow: column;
+    }
+
+    .half {
+	width: 100%;
+    }
+}
