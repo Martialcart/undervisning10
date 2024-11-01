@@ -1,27 +1,40 @@
-.txtImg {
+body {
+    background-image: url("img/nrk_blank.png");
+}
+section {
     display: flex;
-    flex-flow: row;
+    width: 100%;
 }
 
-.imgTxt {
-    display: flex;
-    flex-flow: row;
+.oneTile {
+    flex-direction: column;
 }
 
-.half {
-    width: 50%; 
+.twoTile {
+    div, img{
+	width: 50%;
+    }
+}
+
+.threeTile {
+    img {
+	width: 100%;
+    }
 }
 
 @media(max-width: 560px) {
-    .imgTxt {
-	flex-flow: column-reverse;
+    .twoTile {
+	flex-direction: column;
+	div, img {
+	    width: 100%;
+	}
     }
 
-    .txtImg {
-	flex-flow: column;
+    .reverse {
+	flex-direction: column-reverse;
     }
 
-    .half {
-	width: 100%;
+    .threeTile {
+	flex-direction: column;
     }
 }
