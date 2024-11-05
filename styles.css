@@ -1,8 +1,4 @@
 *{
-    font-family: "Special Elite", system-ui; 
-    color: ivory;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .special-elite-regular {
@@ -31,11 +27,23 @@ iframe, img, h1, h2, h3, p {
     border-radius: 1em;    
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
     background-color: rgba(0,32,16,0.5);
     padding: 0.5em;
+    color: ivory;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+p {
+    background-color: rgba(0,32,16,0.5);
+    padding: 0.5em;
+    font-family: "Special Elite", system-ui; 
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+}
 iframe {
     height: 50vw;
     width: 50vw;
